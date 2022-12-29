@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
       <div className="footer">
         <picture>
-          <img src="../assets/logo.png" alt="" />
+          <img src="./assets/logo.png" alt="Gelateria" />
         </picture>
         <div className="sobre-footer">
           <div className="ech">
