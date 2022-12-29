@@ -1,0 +1,48 @@
+.sobre {
+  @include flex(center);
+  @include banner('../../public/assets/banner-sobre.png');
+
+  h1 {
+    @include titulo-1();
+  }
+}
+
+.sobre-nos {
+  @include center();
+  @include espaco-textos();
+
+  h2 {
+    @include titulo-2();
+    margin-bottom: 0px;
+  }
+
+  h2 + p {
+    margin-bottom: 50px;
+  }
+
+  p + p {
+    margin-top: 25px;
+  }
+}
+
+.sobre-fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  picture {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-fotos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 320px) {
+  .sobre h1 {
+    font-size: 2.5rem;
+  }
+}
